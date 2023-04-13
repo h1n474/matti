@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "matti"
+version = "0.1.0"
+description = "matching file"
+authors = ["hinata"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyexiv2 = "^2.8.1"
+pyperclip = "^1.8.2"
+recurser = {git = "https://git@github.com/h1n474/recurser.git"}
+rich = "^13.3.3"
+
+[tool.poetry.scripts]
+matti = 'matti.core:cli' 
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
