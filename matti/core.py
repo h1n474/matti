@@ -94,16 +94,16 @@ def cli():
     parser.add_argument('--raw-extension', default='.CR2', help='setting: raw date extention.')
     parser.add_argument('--moved-dir', default='SELECT', help='setting: move dir name.')
 
-    parser_ra = subparsers.add_parser('ra', help="matti raiting mode")
+    parser_ra = subparsers.add_parser('rating', help="matti raiting mode")
     parser_ra.add_argument('srcpath', nargs='?', default='.', help="check raw directry.")
     parser_ra.add_argument('-i', '--input', nargs='?', help='search jpg directry.')
     parser_ra.set_defaults(handler=__cli_adobe_rating)
 
-    parser_pb = subparsers.add_parser('pb', help="matti pasteboard mode")
+    parser_pb = subparsers.add_parser('pasteboard', help="matti pasteboard mode")
     parser_pb.add_argument('srcpath', nargs='?', default='.', help="check raw directry.")
     parser_pb.set_defaults(handler=__cli_paste_board)
 
-    parser_fi = subparsers.add_parser('fi', help="matti file mode")
+    parser_fi = subparsers.add_parser('file', help="matti file mode")
     parser_fi.add_argument('srcpath', nargs='?', default='.', help="check raw directry.")
     parser_fi.add_argument('-i', '--input', nargs='?', help='search jpg directry.')
     parser_fi.set_defaults(handler=__cli_file)
