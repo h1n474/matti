@@ -7,11 +7,11 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "*"
-pyexiv2 = "*"
-pyperclip = "*"
+python = "^3.12"
+pyexiv2 = "^2.0"
+pyperclip = "^1.9"
 recurser = {git = "https://git@github.com/h1n474/recurser.git"}
-rich = "*"
+rich = "^12"
 
 [tool.poetry.scripts]
 matti = 'matti.core:cli' 
