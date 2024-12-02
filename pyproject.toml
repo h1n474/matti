@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.1"
 pyexiv2 = "^2.0"
 pyperclip = "^1.9"
 recurser = {git = "https://git@github.com/h1n474/recurser.git"}
